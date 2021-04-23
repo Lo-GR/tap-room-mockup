@@ -9,7 +9,6 @@ function KegDetails(props){
     <>
       <h3>Keg Details</h3>
       <h3>Name: {keg.name}</h3>
-      <h3>ID: {keg.id}</h3>
       <h3>Alch Content</h3>
       <h3>Flavor</h3>
     </>
