@@ -12,9 +12,9 @@ class KegControl extends React.Component{
     }
   }
   handleClick = () => {
-    if (this.state.kegDeetsVisible){
+    if (this.state.selectedKeg != null){
       this.setState({
-        kegDeetsVisible: false
+        selectedKeg: null
       })
     }
   }
@@ -28,7 +28,7 @@ class KegControl extends React.Component{
     let buttonText = "Temp";
     let currentlyVisibleState = null;
     if(this.state.selectedKeg != null){
-      currentlyVisibleState = <KegDetails/>
+      currentlyVisibleState = <KegDetails keg = {this.state.selectedKeg} />
       buttonText = "Return to Keg List";
     } else {
       currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg}/>
