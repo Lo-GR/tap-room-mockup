@@ -37,11 +37,10 @@ class KegControl extends React.Component{
       formVisible: false})
   }
   render(){
-    let buttonText = "Temp";
+    let buttonText = "Return to Keg List";
     let currentlyVisibleState = null;
     if(this.state.selectedKeg != null){
       currentlyVisibleState = <KegDetails keg = {this.state.selectedKeg} />
-      buttonText = "Return to Keg List";
     } else if (this.state.formVisible){
       currentlyVisibleState = "test";
     } else {
