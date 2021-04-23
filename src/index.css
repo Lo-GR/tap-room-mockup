@@ -34,7 +34,5 @@ code {
 #beerImage{
   object-fit: none;
   object-position: center center;
-}
-img{
   width: 100%;
 }
