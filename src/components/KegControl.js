@@ -1,5 +1,6 @@
 import React from 'react';
 import KegList from './KegList';
+import KegDetails from './KegDetails';
 
 class KegControl extends React.Component{
 
@@ -13,6 +14,7 @@ class KegControl extends React.Component{
     return(
       <>
         <KegList/>
+        <KegDetails/>
       </>
     )
   }
