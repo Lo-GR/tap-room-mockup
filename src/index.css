@@ -17,3 +17,9 @@ code {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.remainder{
+  width: 40px;
+  height: 124px;
+  background-color: brown;
+}

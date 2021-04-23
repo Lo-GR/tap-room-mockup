@@ -40,6 +40,7 @@ class KegControl extends React.Component{
         masterKegList: modifiedKegInList
       })
     }
+    document.getElementById(id).style.height = keg.volume + "px";
   }
   handleAddingNewKeg = (newKeg) =>{
     const newKegList = this.state.masterKegList.concat(newKeg);

@@ -8,6 +8,7 @@ function Keg(props){
       <div onClick = {()=> props.whenKegClicked(props.id)}>
         <h3>{props.name} from {props.brand}</h3>
         <h3>{props.flavor} | {props.alc}% | {props.price}$</h3>
+        <div class="remainder" id={props.id}></div>
       </div>
     </>
   )
@@ -20,6 +21,7 @@ Keg.propTypes = {
   flavor: PropTypes.string,
   alc: PropTypes.string,
   price: PropTypes.string,
-  brand: PropTypes.string
+  brand: PropTypes.string,
+  
 }
 export default Keg;

@@ -14,7 +14,8 @@ function KegList(props){
         flavor={keg.flavor}
         price={keg.price}
         alc={keg.alc}
-        brand={keg.brand}/>
+        brand={keg.brand}
+        volume={keg.volume}/>
         <button onClick={()=> props.onPints(keg.id)}>Buy Pint</button>
       </>
       )}
