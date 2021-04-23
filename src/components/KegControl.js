@@ -7,7 +7,7 @@ class KegControl extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      masterKegList: [],
+      masterKegList: [{name: "keggy", id: "1"}],
       kegDeetsVisible: false
     }
   }

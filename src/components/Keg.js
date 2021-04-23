@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 function Keg(props){
   return (
     <>
-      <div onClick = {()=> props.whenKegClicked()}>
-        <h3>Name</h3>
+      <div onClick = {()=> props.whenKegClicked(props.id)}>
+        <h3>{props.name}</h3>
       </div>
     </>
   )
