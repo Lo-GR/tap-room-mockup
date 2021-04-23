@@ -11,6 +11,7 @@ function NewKegForm(props){
       price: event.target.price.value,
       alc: event.target.alc.value,
       flavor: event.target.flavor.value,
+      brand: event.target.brand.value,
       id: v4(),
       // below is how many pints are in the keg to begin
       volume: 124
