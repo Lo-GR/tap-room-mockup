@@ -5,7 +5,20 @@ import PropTypes from "prop-types";
 function KegList(props){
   return (
     <>
-      {props.kegList.map((keg)=>
+      {props.kegList.sort(
+        //this is to sort by alphabetical. Needed due to onpint logic
+        (a, b) => {
+          a = a.name.toUpperCase(); 
+          b = b.name.toUpperCase(); 
+          if (a < b) {
+            return -1;
+          }
+          if (a > b) {
+            return 1;
+          }
+          return 0;
+        }
+      ).map((keg)=>
       <>
         <Keg 
         whenKegClicked={props.onKegSelection}
