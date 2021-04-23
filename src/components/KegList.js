@@ -1,9 +1,10 @@
 import React from "react";
+import Keg from "./Keg";
 
 function KegList(props){
   return (
     <>
-      <p>List</p>
+      <Keg/>
     </>
   )
 }
