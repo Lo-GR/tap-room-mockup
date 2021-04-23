@@ -34,7 +34,7 @@ class KegControl extends React.Component{
   handlePints = (id) =>{
     const keg = this.state.masterKegList.filter(e=>e.id === id)[0];
     if (keg.volume > 0){
-      const newKeg = {...keg, volume: -1};
+      const newKeg = {...keg, volume: (keg.volume)-1};
       const modifiedKegInList = this.state.masterKegList.filter(e=>e.id !== id).concat(newKeg);
       this.setState({
         masterKegList: modifiedKegInList
@@ -56,7 +56,7 @@ class KegControl extends React.Component{
       currentlyVisibleState = <NewKegForm onNewKeg={this.handleAddingNewKeg} />
     } else {
       buttonText ="Add Keg";
-      currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} onPint={this.handlePints} />
+      currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg} onPints={this.handlePints} />
     }
     return(
       <>
