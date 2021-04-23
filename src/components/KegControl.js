@@ -11,10 +11,15 @@ class KegControl extends React.Component{
     }
   }
   render(){
+    let currentlyVisibleState = null;
+    if(this.state.KegDeetsVisible){
+      currentlyVisibleState = <KegDetails/>
+    } else {
+      currentlyVisibleState = <KegList/>
+    }
     return(
       <>
-        <KegList/>
-        <KegDetails/>
+        {currentlyVisibleState}
       </>
     )
   }
