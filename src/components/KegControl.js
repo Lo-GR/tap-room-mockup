@@ -8,17 +8,23 @@ class KegControl extends React.Component{
     super(props);
     this.state = {
       masterKegList: [],
-      KegDeetsVisible: false
+      kegDeetsVisible: false
     }
   }
-
+  handleClick = () => {
+    if (this.state.kegDeetsVisible){
+      this.setState({
+        kegDeetsVisible: false
+      })
+    }
+  }
   handleChangingSelectedKeg = () =>{
-    this.setState({KegDeetsVisible: true})
+    this.setState({kegDeetsVisible: true})
   }
   render(){
     let buttonText = "Temp";
     let currentlyVisibleState = null;
-    if(this.state.KegDeetsVisible){
+    if(this.state.kegDeetsVisible){
       currentlyVisibleState = <KegDetails/>
       buttonText = "Return to Keg List";
     } else {
