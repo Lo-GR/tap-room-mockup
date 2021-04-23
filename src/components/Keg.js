@@ -13,6 +13,8 @@ function Keg(props){
 }
 
 Keg.propTypes = {
-  whenKegClicked: PropTypes.func
+  whenKegClicked: PropTypes.func,
+  name: PropTypes.string,
+  id: PropTypes.string
 }
 export default Keg;

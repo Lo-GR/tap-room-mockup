@@ -5,7 +5,12 @@ import PropTypes from "prop-types";
 function KegList(props){
   return (
     <>
-      <Keg whenKegClicked={props.onKegSelection}/>
+      {props.kegList.map((keg)=>
+      <Keg 
+      whenKegClicked={props.onKegSelection}
+      name = {keg.name}
+      id={keg.id}/>
+      )}
     </>
   )
 }
