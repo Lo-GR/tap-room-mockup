@@ -14,6 +14,18 @@ function NewKegForm(props){
       id: v4(),
       // below is how many pints are in the keg to begin
       volume: 124
-    })
+    });
   }
+  return(
+    <>
+      <ReusableForm formSubmissionHandler={handleNewKeg}
+      buttonText="Submit new Keg"/>
+    </>
+  )
 }
+
+NewKegForm.propTypes = {
+  onNewKeg: PropTypes.func
+};
+
+export default NewKegForm;
