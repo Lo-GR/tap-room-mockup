@@ -16,6 +16,9 @@ code {
   height: 200px;
   margin-bottom: 20px;
   text-align: center;
+  overflow: hidden; 
+  display: flex; 
+  width: 100%;
 }
 
 .remainder{
@@ -23,4 +26,15 @@ code {
   height: 40px;
   background-color: gold;
   text-align: center;
+}
+.kegs{
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+#beerImage{
+  object-fit: none;
+  object-position: center center;
+}
+img{
+  width: 100%;
 }

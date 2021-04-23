@@ -1,11 +1,12 @@
 import React from 'react';
+import Beer from "./../img/beer-background-strip.jpg"
 
 
 function Header(){
   return (
     <>
       <div className="header">
-        <p>Header</p>
+      <img src={Beer} id="beerImage" alt="An image of tickets" />
       </div>
     </>
   )

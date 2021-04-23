@@ -20,16 +20,18 @@ function KegList(props){
         }
       ).map((keg)=>
       <>
-        <Keg 
-        whenKegClicked={props.onKegSelection}
-        name = {keg.name}
-        id={keg.id}
-        flavor={keg.flavor}
-        price={keg.price}
-        alc={keg.alc}
-        brand={keg.brand}
-        volume={keg.volume}/>
-        <button onClick={()=> props.onPints(keg.id)}>Buy Pint</button>
+        <div className="kegs">
+          <Keg 
+          whenKegClicked={props.onKegSelection}
+          name = {keg.name}
+          id={keg.id}
+          flavor={keg.flavor}
+          price={keg.price}
+          alc={keg.alc}
+          brand={keg.brand}
+          volume={keg.volume}/>
+          <button onClick={()=> props.onPints(keg.id)}>Buy Pint</button>
+        </div>
       </>
       )}
     </>
