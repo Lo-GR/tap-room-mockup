@@ -20,7 +20,7 @@ class KegControl extends React.Component{
     if(this.state.KegDeetsVisible){
       currentlyVisibleState = <KegDetails/>
     } else {
-      currentlyVisibleState = <KegList kegList={this.state.masterKegList} onTicketSelection={this.handleChangingSelectedKeg}/>
+      currentlyVisibleState = <KegList kegList={this.state.masterKegList} onKegSelection={this.handleChangingSelectedKeg}/>
     }
     return(
       <>

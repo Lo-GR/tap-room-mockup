@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 function KegList(props){
   return (
     <>
-      <Keg/>
+      <Keg whenKegClicked={props.onKegSelection}/>
     </>
   )
 }
 
 KegList.propTypes = {
   kegList: PropTypes.array,
-  onTicketSelection: PropTypes.func
+  onKegSelection: PropTypes.func
 }
 export default KegList;
