@@ -13,7 +13,6 @@
 * **JavaScript ES6**
 * **Node Package Manager 6.14.9**
 * **webpack 4.39.3**
-* **Babel 7.6.4**
 * **eslint 6.3.0**
 * **UUID**
 
