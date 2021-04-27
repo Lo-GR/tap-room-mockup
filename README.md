@@ -4,6 +4,8 @@
  ### _Contributor(s) and Contact Info_
 > Logan Roth diamondintheroth@gmail.com - [GitHub(Lo-GR)](https://github.com/Lo-GR)
 
+[//]: <> (Readme- Template by Logan Roth, please do not remove without giving proper contributions.)
+
 ---
 
 ## _Technologies Used_ ⚙
@@ -156,3 +158,5 @@ Expectations___
 Copyright (c) 2021, Logan Roth.
 
 Please contact Contributor for further use information or if you would like to make a contribution.
+
+[//]: <> (Readme- Template by Logan Roth, please do not remove without giving proper contributions.)
